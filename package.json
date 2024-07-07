@@ -1,0 +1,26 @@
+{
+  "name": "react-video-player",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StombieIT/react-video-player.git"
+  },
+  "keywords": [
+    "react",
+    "video-player",
+    "video",
+    "player",
+    "vite"
+  ],
+  "author": "Vladislav Yartsev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StombieIT/react-video-player/issues"
+  },
+  "homepage": "https://github.com/StombieIT/react-video-player#readme"
+}
