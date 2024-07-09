@@ -2,10 +2,12 @@
   "name": "@stombie/react-video-player",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview",
+    "publish": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,19 @@
   },
   "homepage": "https://github.com/StombieIT/react-video-player#readme",
   "devDependencies": {
-    "vite": "^5.3.3"
-  }
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-dts": "^3.9.1"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "files": [
+    "build"
+  ]
 }
