@@ -7,7 +7,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "publish": "npm run build && npm publish"
+    "build:publish": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
