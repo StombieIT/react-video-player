@@ -9,8 +9,8 @@
     "preview": "vite preview",
     "lint:es": "eslint . --ext .mts,.ts,.tsx",
     "lint:ts": "tsc --noEmit",
-    "lint": "npm run lint:es && npm run lint:ts"
-    "build:publish": "npm run lint && npm run build && npm publish",
+    "lint": "npm run lint:es && npm run lint:ts",
+    "build:publish": "npm run lint && npm run build && npm publish"
   },
   "repository": {
     "type": "git",
