@@ -1,4 +1,4 @@
-import {FC} from "react";
+import type { FC } from "react";
 
 import classes from "./VideoPlayer.module.styl";
 
@@ -7,7 +7,5 @@ interface IVideoPlayerProps {
 }
 
 export const VideoPlayer: FC<IVideoPlayerProps> = () => {
-    return (
-        <video className={classes["player"]}></video>
-    );
+    return <video className={classes["player"]}></video>;
 };

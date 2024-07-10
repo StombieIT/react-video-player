@@ -1,0 +1,77 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "ignorePatterns": ["build/**"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended",
+        "plugin:import/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "env": {
+        "node": true,
+        "browser": false
+    },
+    "rules": {
+        "no-undef": "error",
+        "@typescript-eslint/consistent-type-imports": "error",
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    "index",
+                    "builtin",
+                    "external",
+                    "internal",
+                    [
+                        "sibling",
+                        "parent"
+                    ],
+                    "object",
+                    "type"
+                ],
+                "pathGroups": [
+                    {
+                        "pattern": "react",
+                        "group": "builtin",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "*.+(styl|css|svg)",
+                        "group": "type",
+                        "position": "after",
+                        "patternOptions": {
+                            "matchBase": true
+                        }
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": [
+                    "react"
+                ],
+                "alphabetize": {
+                    "order": "asc"
+                },
+                "newlines-between": "always"
+            }
+        ],
+        "import/no-unresolved": "off"
+    },
+    "overrides": [
+        {
+            "files": [
+                "src/**/*.{ts,tsx}"
+            ],
+            "env": {
+                "browser": true,
+                "node": false
+            },
+            "rules": {
+                "react/react-in-jsx-scope": "off"
+            }
+        }
+    ]
+}
