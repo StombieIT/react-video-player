@@ -41,7 +41,6 @@ export default defineConfig(({ mode }) => {
             dts({
                 entryRoot: path.resolve(__dirname, "src"),
                 exclude: path.resolve(__dirname, "src", "dev"),
-                tsconfigPath: path.resolve(__dirname, "src", "tsconfig.json"),
             }),
         ],
     };
