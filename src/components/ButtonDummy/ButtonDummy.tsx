@@ -1,11 +1,7 @@
-import {FC} from "react";
+import type { FC } from "react";
 
 import classes from "./ButtonDummy.module.styl";
 
 export const ButtonDummy: FC = () => {
-    return (
-        <button className={classes["btn"]}>
-            test
-        </button>
-    );
-}
+    return <button className={classes["btn"]}>test</button>;
+};
