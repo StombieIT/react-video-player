@@ -1,12 +1,17 @@
 import {createRoot} from "react-dom/client";
-import {VideoPlayer} from "@/components/VideoPlayer/VideoPlayer";
 
-const root = createRoot(
-    document.getElementById("root") as HTMLElement
-);
+import "./resets.styl";
+
+import videoTemplateSrc from "./assets/video-template.mp4";
+
+import classes from "./styles.module.styl";
+
+import { Player } from "@/components/Player/Player";
+
+const root = createRoot(document.getElementById("root") as HTMLElement);
 
 root.render(
-    <div>
-        <VideoPlayer src="test" />
-    </div>
+    <main className={classes["playground-wrapper"]}>
+        <Player src={videoTemplateSrc} width="400" height="500" />
+    </main>,
 );
