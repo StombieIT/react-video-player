@@ -26,10 +26,11 @@
                     "index",
                     "builtin",
                     "external",
+                    "unknown",
                     "internal",
                     [
-                        "sibling",
-                        "parent"
+                        "parent",
+                        "sibling"
                     ],
                     "object",
                     "type"

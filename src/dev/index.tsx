@@ -1,12 +1,11 @@
 import { createRoot } from "react-dom/client";
 
-import "./resets.styl";
+import { Player } from "@/components/Player/Player";
 
+import "./resets.styl";
 import videoTemplateSrc from "./assets/video-template.mp4";
 
 import classes from "./styles.module.styl";
-
-import { Player } from "@/components/Player/Player";
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
 
